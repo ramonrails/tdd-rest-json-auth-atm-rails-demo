@@ -1,6 +1,6 @@
 # What is this?
 
-![timer based skill analysis challenge](https://image.flaticon.com/icons/png/512/1481/1481143.png)
+<img src="https://image.flaticon.com/icons/png/512/1481/1481143.png" alt="timer based skill analysis challenge" width="128px;" />
 
 Just a random challenge. Am I still in the game?
 
