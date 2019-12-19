@@ -76,7 +76,7 @@ example: `eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NzY4NzIxMzV9.mu6MHYzj
 
 `curl -H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NzY4NzIyNzh9.T0jaBIk2bzRN4q5quBowbD-pPLlJ7hJ_6lSbgiU_LCE" http://localhost:3000/tellers`
 
-what about the headers in the requirement?
+# what about some headers?
 This is curl/REST/API. Just add them in the command/URL
 
 ```
