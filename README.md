@@ -1,3 +1,21 @@
+# What is this?
+Just a random challenge. Am I still in the game?
+A sample rails app written in under 1 hour. :)
+
+- REST API
+- JSON payload
+- Tokenized authentication via API
+- Admin & users
+- Admin authenticates with email and password
+- Users authenticate with an ATM card and PIN
+- Withdrawal limit of 20,000 (conditional logic on API)
+- ATM always keeps the balance updated
+- Card number cam only be 8 characters
+- PIN can only be 4 characters
+- API: Deposit into ATM (after authentication)
+- API: Withdraw from ATM (after authentication)
+- API: Fetch balance in ATM (Count of currency notes and their denominations)
+
 # How to deploy?
 You should have ruby, `bundler` gem installed
 
