@@ -3,11 +3,14 @@ class TellersController < ApplicationController
 
   # GET /tellers
   def index
-    @tellers = @user && @user.isadmin ? Teller.balance : {}
+    # FIXME: anyone can see the balance right now.
+    # Only admin should see as per the requirement
+    @tellers = Teller.balance
 
     render json: @tellers
   end
 
+  # FIXME: No need of this actually. we can omit eventually
   # GET /tellers/1
   def show
     render json: @teller
@@ -24,6 +27,7 @@ class TellersController < ApplicationController
     end
   end
 
+  # FIXME: No need of this actually. we can omit eventually
   # PATCH/PUT /tellers/1
   def update
     if @teller.update(teller_params)
@@ -33,6 +37,7 @@ class TellersController < ApplicationController
     end
   end
 
+  # FIXME: No need of this actually. we can omit eventually
   # DELETE /tellers/1
   def destroy
     @teller.destroy
