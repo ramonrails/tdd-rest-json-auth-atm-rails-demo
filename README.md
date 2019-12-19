@@ -1,5 +1,9 @@
 # What is this?
+
+![timer based skill analysis challenge](https://image.flaticon.com/icons/png/512/1481/1481143.png)
+
 Just a random challenge. Am I still in the game?
+
 A sample rails app written in under 1 hour. :)
 
 - REST API
