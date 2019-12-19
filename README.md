@@ -41,6 +41,7 @@ now open another terminal to run the following commands
 authenticate using REST API with JSON payload
 example result: `{"auth_token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NzY4Njk3MzZ9.u9n-b_GKonsd-htsk12bTf8eamJVxGvAjCdhoXmnTvI"}`
 
+# terminal / console (shell prompt)
 ## get admin token
 example: `eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NzY4NzIyNzh9.T0jaBIk2bzRN4q5quBowbD-pPLlJ7hJ_6lSbgiU_LCE`
 
