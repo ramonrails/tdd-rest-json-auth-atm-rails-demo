@@ -1,5 +1,6 @@
 # How to deploy?
-#  You should have ruby, `bundler` gem installed
+You should have ruby, `bundler` gem installed
+
 ```
 git clone https://github.com/ramonrails/ramonrails-rest-json-auth-atm-demo
 cd ramonrails-rest-json-auth-atm-demo
@@ -7,8 +8,8 @@ bundle install
 rails db:create db:migrate
 rails server
 ```
-# you have a rails server running with REST API, to accept commands with JSON payload
-# now open another terminal to run the following commands
+you have a rails server running with REST API, to accept commands with JSON payload
+now open another terminal to run the following commands
 
 # Rails console
 ## create admin with email and password
@@ -19,16 +20,16 @@ rails server
 
 `User.create!(email: 'user@gmail.com' , card: 'card1234' , pin: '1234')`
 
-# authenticate using REST API with JSON payload
-# example result: {"auth_token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NzY4Njk3MzZ9.u9n-b_GKonsd-htsk12bTf8eamJVxGvAjCdhoXmnTvI"}
+authenticate using REST API with JSON payload
+example result: `{"auth_token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NzY4Njk3MzZ9.u9n-b_GKonsd-htsk12bTf8eamJVxGvAjCdhoXmnTvI"}`
 
 ## get admin token
-## example: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NzY4NzIyNzh9.T0jaBIk2bzRN4q5quBowbD-pPLlJ7hJ_6lSbgiU_LCE
+example: `eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NzY4NzIyNzh9.T0jaBIk2bzRN4q5quBowbD-pPLlJ7hJ_6lSbgiU_LCE`
 
 `curl -H "Content-Type: application/json" -X POST -d '{"email":"ramonrails@gmail.com","password":"changeme123"}' http://localhost:3000/authenticate`
 
 ## get user token
-## example: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NzY4NzIxMzV9.mu6MHYzjtr-S2qSVHnlmyeOchIwc-6HNKSn58z3RG20
+example: `eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NzY4NzIxMzV9.mu6MHYzjtr-S2qSVHnlmyeOchIwc-6HNKSn58z3RG20`
 
 `curl -H "Content-Type: application/json" -X POST -d '{"card":"card1234", "pin":"1234"}' http://localhost:3000/authenticate`
 
@@ -56,8 +57,8 @@ rails server
 
 `curl -H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NzY4NzIyNzh9.T0jaBIk2bzRN4q5quBowbD-pPLlJ7hJ_6lSbgiU_LCE" http://localhost:3000/tellers`
 
-# what about the headers in the requirement?
-#   This is curl/REST/API. Just add them in the command/URL
+what about the headers in the requirement?
+This is curl/REST/API. Just add them in the command/URL
 
 ```
 -H "access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept"
